@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 
+var port     = process.env.PORT || 5000;
 var app = express();
 
 // view engine setup
@@ -57,4 +58,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
+app.listen(port);
 module.exports = app;
