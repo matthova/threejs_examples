@@ -69,6 +69,9 @@
 
     scene.add( new THREE.GridHelper( 10, 2.5 ) );
     container = document.getElementById('viewport');
+    container.style.position = 'absolute';
+    container.style.zIndex = -1;
+    container.style.top = '0px';
 
     renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true	} );
     renderer.setClearColor( 0x000000, 0 );
